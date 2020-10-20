@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/textViewSex"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:text="@string/Sexo"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSex"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.83"
+            android:entries="@array/Sex"
+            android:prompt="@string/Prompt" />
+
+        <TextView
+            android:id="@+id/textViewEstado"
+            android:layout_width="92dp"
+            android:layout_height="63dp"
+            android:layout_weight="0.30"
+            android:text="@string/Estado"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/Prompt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_x="0dp"
+        android:layout_y="58dp"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/Fecha"
+            android:textSize="25dp" />
+        
+        <DatePicker
+            android:id="@+id/datePickerFecha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="376dp"
+        android:layout_y="205dp"
+        android:text="@string/P3ButtonConsultar" />
+
+</AbsoluteLayout>

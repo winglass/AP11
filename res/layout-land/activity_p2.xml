@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp" >
+        
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Nombre"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintNombre"
+            android:inputType="textPersonName" >
+
+        </EditText>
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_x="-1dp"
+        android:layout_y="64dp" >
+        
+        <TextView
+            android:id="@+id/textViewPaterno"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ApellidoPaterno"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editTextPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintPaterno"
+            android:inputType="textPersonName" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_x="0dp"
+        android:layout_y="140dp" >
+        
+        <TextView
+            android:id="@+id/textViewMaterno"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ApellidoMaterno"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editTextMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintMAterno"
+            android:inputType="textPersonName" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_x="336dp"
+        android:layout_y="209dp"
+        android:text="@string/P2ButtonNext" />
+
+</AbsoluteLayout>
